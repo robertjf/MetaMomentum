@@ -7,7 +7,7 @@
 
 				<div class="clearfix">
 					<div class="control-header mm-preview-header">
-						<label class="control-label" id="SearchPreview">
+						<label class="control-label" id="SearchPreview" title="{{model.alias}}">
 							Search Engine Preview
 						</label>
 						<button type="button" class="btn-reset btn-link" style="float:right;" ng-click="toggleSearchPreview()">{{(showEditSearch)? "Hide Preview" : "Edit Preview"}}</button>
@@ -25,7 +25,7 @@
 						<div class="clearfix">
 
 							<div class="control-header">
-								<label class="control-label" for="heroHeader" title=""> Title </label>
+								<label class="control-label" for="heroHeader" title="{{model.alias}}.Title"> Title </label>
 								<small class="control-description">
 									The title will appear in the browser tab and as the first line in search results.
 
@@ -41,7 +41,7 @@
 						<div class="clearfix">
 
 							<div class="control-header">
-								<label class="control-label"> Description </label>
+								<label class="control-label" title="{{model.alias}}.Description"> Description </label>
 								<small class="control-description">The description provides a brief summary of a web page and is shown under the title in search results.</small>
 							</div>
 
@@ -62,7 +62,7 @@
 
 			<div class="clearfix" style="margin-top:20px;">
 				<div class="control-header mm-preview-header">
-					<label class="control-label" id="SearchPreview">
+					<label class="control-label" id="SearchPreview" title="{{model.alias}}.NoIndex">
 						Search Engine Visibility
 					</label>
 					<umb-toggle checked="!model.value.noIndex"
@@ -94,7 +94,7 @@
 
 				<div class="clearfix">
 					<div class="control-header mm-preview-header">
-						<label class="control-label" id="SocialPreview" for="heroHeader" title="" style="">
+						<label class="control-label" id="SocialPreview" for="heroHeader" title="{{model.alias}}">
 							Social Platform Preview
 						</label>
 						<button type="button" class="btn-reset btn-link" style="float:right;" ng-click="toggleSocialPreview()">{{(showEditSocial)? "Hide Preview" : "Edit Preview"}}</button>
@@ -186,7 +186,7 @@
 						<div class="clearfix">
 
 							<div class="control-header">
-								<label class="control-label" for="heroHeader" title="">Share Title </label>
+								<label class="control-label" for="heroHeader" title="{{model.alias}}.ShareTitle">Share Title </label>
 								<small class="control-description">
 									The title will appear as the title when shared on social media.
 								</small>
@@ -201,7 +201,7 @@
 						<div class="clearfix">
 
 							<div class="control-header">
-								<label class="control-label" for="heroHeader" title="">Share Description </label>
+								<label class="control-label" for="heroHeader" title="{{model.alias}}.ShareDescription">Share Description </label>
 								<small class="control-description">The share description shown under the title when shared.</small>
 							</div>
 
@@ -221,7 +221,7 @@
 						<div class="clearfix" style="margin:25px 0;">
 
 							<div class="control-header">
-								<label class="control-label" for="heroHeader" title="">Share Image</label>
+								<label class="control-label" for="heroHeader" title="{{model.alias}}.ShareImage">Share Image</label>
 								<small class="control-description">&nbsp;</small>
 							</div>
 

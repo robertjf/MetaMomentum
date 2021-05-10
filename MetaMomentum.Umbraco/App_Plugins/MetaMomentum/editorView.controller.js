@@ -1,6 +1,7 @@
 ﻿angular.module("umbraco")
     .controller("DM.MetaMomentum",
-        function ($scope, $filter, editorState, contentEditingHelper, editorService) {
+		function ($scope, $filter, editorState, contentEditingHelper, editorService) {
+			console.log($scope.model)
 			$scope.sharePreviewType = null;
 			$scope.showEditSearch = false;
 			$scope.showEditSocial = false;
