@@ -199,7 +199,7 @@ angular.module("umbraco")
 
 			$scope.updateShareImage = function () {
 				$scope.model.value.shareImage = null;
-				
+
 
 				//check if there is one already set.
 				if ($scope.model.value.share.imageUrl != null) {
@@ -235,13 +235,22 @@ angular.module("umbraco")
 									$scope.model.value.shareImage = properties[p].value;
 
 
-									if ($scope.model.value.shareImage != null && $scope.model.value.shareImage.startsWith("umb://")) {
+									if (properties[p].view == "mediapicker" && $scope.model.value.shareImage != null && $scope.model.value.shareImage.startsWith("umb://")) {
 										//The fallback is a media picker
 										entityResource.getById($scope.model.value.shareImage, "Media")
 											.then(function (mediaEntity) {
 												$scope.model.value.shareImageUrl = mediaEntity.metaData.MediaPath;
 											});
-									} else if ($scope.model.value.shareImage.startsWith("/")) {
+									} else if (properties[p].view == "mediapicker3" && Array.isArray(properties[p].value) && properties[p].value.length > 0) {
+										//The fallback is a media picker
+										console.log(properties[p].value)
+										$scope.model.value.shareImage = properties[p].value[0].mediaKey
+										entityResource.getById($scope.model.value.shareImage, "Media")
+											.then(function (mediaEntity) {
+												console.log(mediaEntity);
+												$scope.model.value.shareImageUrl = mediaEntity.metaData.MediaPath;
+											});
+									} else if (!Array.isArray(properties[p].value) && $scope.model.value.shareImage.startsWith("/")) {
 										//Probably an upload field. Could be another random property too, so be careful
 										$scope.model.value.shareImageUrl = $scope.model.value.shareImage;
 									} else {
