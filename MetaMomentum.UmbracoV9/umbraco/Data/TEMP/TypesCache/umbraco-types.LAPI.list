@@ -96,7 +96,7 @@ Umbraco.Cms.Core.Actions.ActionSort, Umbraco.Core, Version=9.0.0.0, Culture=neut
 Umbraco.Cms.Core.Actions.ActionToPublish, Umbraco.Core, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Cms.Core.Actions.ActionUnpublish, Umbraco.Core, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Cms.Core.Actions.ActionUpdate, Umbraco.Core, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null
-MetaMomentum.ValueConverters.MetaMomentumValueConverter, MetaMomentum, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+MetaMomentum.ValueConverters.MetaMomentumValueConverter, MetaMomentum, Version=1.2.0.1, Culture=neutral, PublicKeyToken=null
 Umbraco.Cms.Web.Website.Controllers.UmbLoginController, Umbraco.Web.Website, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Cms.Web.Website.Controllers.UmbLoginStatusController, Umbraco.Web.Website, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Cms.Web.Website.Controllers.UmbProfileController, Umbraco.Web.Website, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null
@@ -307,7 +307,7 @@ Umbraco.Cms.Core.PropertyEditors.ValueConverters.SliderValueConverter, Umbraco.C
 Umbraco.Cms.Core.PropertyEditors.ValueConverters.TagsValueConverter, Umbraco.Core, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Cms.Core.PropertyEditors.ValueConverters.UploadPropertyConverter, Umbraco.Core, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Cms.Core.PropertyEditors.ValueConverters.YesNoValueConverter, Umbraco.Core, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null
-MetaMomentum.ValueConverters.MetaMomentumValueConverter, MetaMomentum, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
+MetaMomentum.ValueConverters.MetaMomentumValueConverter, MetaMomentum, Version=1.2.0.1, Culture=neutral, PublicKeyToken=null
 Umbraco.Cms.Core.PropertyEditors.ValueConverters.BlockListPropertyValueConverter, Umbraco.Infrastructure, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Cms.Core.PropertyEditors.ValueConverters.ColorPickerValueConverter, Umbraco.Infrastructure, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Cms.Core.PropertyEditors.ValueConverters.FlexibleDropdownPropertyValueConverter, Umbraco.Infrastructure, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null
