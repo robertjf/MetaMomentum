@@ -147,6 +147,10 @@ TwitterName:			@Model.MetaMomentum.TwitterName
 ##### V1.2:
  - Added mediapicker3 support for Umbraco 8.14+
 
+##### V2.0:
+ - Full Umbraco 9.0+ Support
+ - Bug fix: Fallbacks to the Image Cropper field threw an error
+
 
 ## Pre-Release Versions
 
